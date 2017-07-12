@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity implements FunctionListener{
         }
 
         openGps();
-
-
     }
 
     public void InputYouBike(){
@@ -288,9 +286,9 @@ public class MainActivity extends AppCompatActivity implements FunctionListener{
         super.onActivityResult(requestCode, resultCode, data);
         Log.d(TAG_GPS, "進入開啟GPS畫面");
         if (resultCode == REQUEST_CODE) {   //成功開啟
-            Toast.makeText(MainActivity.this, "已開啟GPS", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, "已開啟GPS", Toast.LENGTH_SHORT).show();         //這裡還是有BUG 都會是以開啟或是未開啟
         } else {                                                      //開啟失敗
-            Toast.makeText(MainActivity.this, "沒有開啟而返回", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(MainActivity.this, "沒有開啟而返回", Toast.LENGTH_SHORT).show();
         }
         Log.d(TAG_GPS, resultCode == PackageManager.PERMISSION_GRANTED ? "有開啟GPS返回" : "沒有開啟GSP返回");
     }

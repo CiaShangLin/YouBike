@@ -136,11 +136,11 @@ public class YoubikeCity extends AsyncTask<String,Integer,String> {
                 sb.append(line);
                 Log.d("SBLINE",sb.toString());
 
-                if(sb.toString().indexOf("OVER_QUERY_LIMIT")!=-1){
+                if(sb.toString().indexOf("request quota for this API")!=-1){
                     flag=false;
                     API=1;
                     break;
-                }else if(sb.toString().indexOf("You have exceeded your rate-limit for this API")!=-1){  //超速
+                }else if(sb.toString().indexOf("rate-limit for this API")!=-1){  //超速
                     break;
                 }
 
