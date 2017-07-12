@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weaterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGrass"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/weaterback" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView5"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="14dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/weatherSp"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/weatherTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/weatherTv2"
+                    android:layout_below="@+id/weatherSp"
+                    android:text="今日"
+                    android:textColor="@color/common_signin_btn_dark_text_default"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/weatherTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/weatherTv4"
+                    android:layout_below="@+id/weatherTv"
+                    android:text="溫度:"
+                    android:textColor="@color/common_signin_btn_dark_text_default"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/weatherTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/weatherSp"
+                    android:layout_below="@+id/weatherTv2"
+                    android:text="天氣:"
+                    android:textColor="@color/common_signin_btn_dark_text_default"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/weatherTv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/weatherSp"
+                    android:layout_below="@+id/weatherTv3"
+                    android:text="舒適度:"
+                    android:textColor="@color/common_signin_btn_dark_text_default"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/weatherTv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/weatherTv4"
+                    android:layout_below="@+id/weatherTv4"
+                    android:text="降雨機率:"
+                    android:textColor="@color/common_signin_btn_dark_text_default"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/weaterback" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/imageView7">
+
+            <Spinner
+                android:id="@+id/pmSp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView8"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:layoutMode="clipBounds"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/pmTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/pmTv2"
+                android:layout_marginStart="28dp"
+                android:text="0"
+                android:textColor="@color/common_signin_btn_dark_text_default"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pmTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pmTv"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="6dp"
+                android:text="品質"
+                android:textColor="@color/common_signin_btn_dark_text_default"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pmSp"
+                android:layout_centerHorizontal="true"
+                android:text="空氣品質(AQI) "
+                android:textColor="@color/common_signin_btn_dark_text_default"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

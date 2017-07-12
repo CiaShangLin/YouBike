@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Youbike</string>
+
+    <string name="maker">製作者</string>
+    <string name="updata">更新資料</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3596318314144695/1486200364</string>
+
+    <string name="description">1.常用站點\n會顯示出已加入常用的站點\n2.站點地圖\n切換到google map顯示每一個站點,點擊站點視窗可加入常用站點
+                            \n3.列表模式\n依照縣市來顯示每一個站點的資訊,按下旁邊的愛心按鈕,可加入到常用站點\n4.製作者\n只是顯示是誰做的@@
+                            \n5.聯絡方式\n如果覺得哪裡需要改進的話,可以使用gmail來聯絡</string>
+
+    <string-array name="cityName">
+        <item>台北</item>
+        <item>基隆</item>
+        <item>新竹</item>
+        <item>桃園</item>
+        <item>台中</item>
+        <item>彰化</item>
+    </string-array>
+
+    <string-array name="item">
+        <item>常用站點</item>
+        <item>地圖模式</item>
+        <item>列表模式</item>
+        <item>製作者</item>
+        <item>聯絡方法</item>
+        <item>使用說明</item>
+    </string-array>
+
+    <string-array name="weather">
+        <item>基隆市</item>
+        <item>台北市</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>新竹市</item>
+        <item>新竹縣</item>
+        <item>台中市</item>
+        <item>彰化市</item>
+    </string-array>
+
+    <string-array name="weatherUrl">
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Keelung_City.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/New_Taipei_City.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Taoyuan_City.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Hsinchu_City.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Hsinchu_County.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Taichung_City.htm</item>
+        <item>http://www.cwb.gov.tw/V7/forecast/taiwan/Changhua_County.htm</item>
+    </string-array>
+
+    <string-array name="pmStation">
+        <item>基隆</item>
+        <item>汐止</item>
+        <item>新店</item>
+        <item>土城</item>
+        <item>新莊</item>
+        <item>菜寮</item>
+        <item>林口</item>
+        <item>淡水</item>
+        <item>士林</item>
+        <item>中山</item>
+        <item>古亭</item>
+        <item>松山</item>
+        <item>桃園</item>
+        <item>大園</item>
+        <item>平鎮</item>
+        <item>新竹 </item>
+        <item>豐原</item>
+        <item>大里</item>
+        <item>忠明 </item>
+        <item>西屯</item>
+        <item>彰化</item>
+    </string-array>
+    
+    <string-array name="quality">
+        <item>良好</item>
+        <item>普通</item>
+        <item>對敏感族群\n不健康</item>
+        <item>對所有族群\n不健康</item>
+        <item>非常不健康</item>
+        <item>危害</item>
+        <item>抱歉目前\n無資料</item>
+    </string-array>
+
+
+</resources>
